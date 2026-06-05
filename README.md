@@ -1,14 +1,14 @@
 # The game
 
-It is a classic battleship game with standard russian rules:
+This is a classic battleship game with standard Russian rules:
 
-1. Each player has 10x10 field.
-2. Each player has 10 ships: one 4-squared battleship, two 3-squared cruisers, three 2-squared destroyers and four 1-squared torpedo boats.
-3. Ships cannot be placed adjacent to each other.
-4. If hit, player continues shooting.
-5. If missed, the enemy takes turn.
+1. Each player has a 10×10 grid.
+2. Each player has 10 ships: one 4‑square battleship, two 3‑square cruisers, three 2‑square destroyers, and four 1‑square torpedo boats.
+3. Ships cannot be placed adjacent to each other (diagonally or orthogonally).
+4. If a player hits an enemy ship, they continue shooting.
+5. If a player misses, the turn passes to the opponent.
 
-Player plays against the computer. There are 5 difficulty levels.
+The player competes against the computer. There are five difficulty levels.
 
 # How to run
 
@@ -18,19 +18,18 @@ Then press Enter once.
 
 # How to play
 
-Firstly, you need to select a difficulty level. Type a digit from `1` to `5` and press Enter.
+First, you need to select a difficulty level. Type a digit from 1 to 5 and press Enter.
 
-Then, you need to place your ships. You should choose a cell to be the upper-left cell of your ship, and its orientation (horizontal or vertical). Type the coordinate and the orientation letter. Like `A5V` or `G5H` and press Enter. Repeat 10 times. You know, just try it, you'll get it in practice quicker :)
+Next, you need to place your ships. You should choose a cell to be the upper‑left corner of your ship and specify its orientation (horizontal or vertical). Enter the coordinate and the orientation letter (for example, A5V or G5H) and press Enter. Repeat this step 10 times. You know, just try it, you'll get the hang of it in practice quicker :)
 
-After that wait for a while: it was really hard to implement FAST ship placing on `sed`... 
+After that, please wait for a while: it was really hard to implement FAST ship placement using `sed`…
 
-Then, just input your suggestion (like `A5` or `B7`) and press Enter.
+Then, simply enter your guess (for example, A5 or B7) and press Enter.
 
 # Implementation
 
 Yep, it is pure `sed`. PURE.
 
-Arithmetics, random number generation, placing and shooting algorithms, validation, difficulty level tuning — every single thing was implemented without external calls, only with `sed` capabilities.
+Arithmetics, random number generation, placing and shooting algorithms, validation, difficulty level tuning — everything was built from scratch using only `sed`, without a single external call.
 
-LLMs were not involved also, even for consulting. The result is a pure product of my intelligence (and a bit of stackoverflow :) )
-
+LLMs were not involved also, even for consulting. The result is a pure product of my intelligence (with a bit of help from stackoverflow :) )
