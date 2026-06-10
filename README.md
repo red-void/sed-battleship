@@ -26,6 +26,9 @@ After that, please wait for a while: it was really hard to implement FAST ship p
 
 Then, simply enter your guess (for example, A5 or B7) and press Enter.
 
+That's how it looks like:
+![animation](animation.gif)
+
 # Implementation
 
 Yep, it is pure `sed`. PURE.
